@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Personality Predictor</title>
+    <meta name="description" content="Developed by @apdoolhamza; a Full-Stack Web Developer, AI/ML Developer, UX/UI Designer, Freelancer (https://github.com/apdoolhamza)">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm py-3 px-4">
+        <div class="d-flex align-items-center">
+            <div class="message-avatar text-white me-3">
+                <i class="ri-robot-line"></i>
+            </div>
+            <div>
+                <h1 class="h5 mb-1 fw-semibold">AI Personality Predictor</h1>
+                <p class="small text-muted mb-0">Chat with AI to discover your personality traits</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Chat Container -->
+    <div class="flex-grow-1 overflow-auto px-3 py-4 chat-container">
+        <div class="container msg-container">
+            <!-- Welcome Message -->
+            <div class="d-flex mb-4">
+                <div class="message-avatar ai-avatar me-3">
+                    <i class="ri-robot-line"></i>
+                </div>
+                <div class="flex-grow-1" style="max-width: 80%;">
+                    <div class="message-bubble-ai p-3 rounded-3 message-enter">
+                        <p class="mb-0">Hello! I'm your AI personality predictor. I can analyze your personality traits based on what you share with me. The more you tell me about your thoughts, feelings, and experiences, the more accurate my personality analysis will be!</p>
+                    </div>
+                    <span class="small text-muted mt-1 d-block">Now</span>
+                </div>
+            </div>
+
+            <!-- Quick questions Suggestions -->
+            <div class="d-flex justify-content-center mb-4">
+                <div class="d-flex flex-wrap justify-content-center gap-2">
+                    <button class="quick-question btn btn-light border rounded-pill px-3 py-2 small rounded-button">What's MBTI?</button>
+                    <button class="quick-question btn btn-light border rounded-pill px-3 py-2 small rounded-button">Your Accuracy Level?</button>
+                    <button class="quick-question btn btn-light border rounded-pill px-3 py-2 small rounded-button">Dataset Trained On?</button>
+                    <button class="quick-question btn btn-light border rounded-pill px-3 py-2 small rounded-button">Tech Stack Used?</button>
+                </div>
+            </div>
+
+            <!-- AI Response with Typing Indicator -->
+            <div class="d-flex mb-4 d-none" id="typing-indicator">
+                <div class="message-avatar ai-avatar me-3">
+                    <i class="ri-robot-line"></i>
+                </div>
+                <div class="message-bubble-ai p-3 rounded-3 d-inline-flex align-items-center">
+                    <div class="typing-indicator">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Input Section -->
+    <div class="bg-white border-top py-3 px-4">
+        <div class="container">
+            <div class="input-container">
+                <i class="ri-message-3-line input-icon"></i>
+                <input type="text" id="message-input" name="message_input" class="form-control ps-5 pe-5 py-3 rounded-button" placeholder="Type your message here...">
+                <div class="position-absolute end-0 top-0 h-100 d-flex align-items-center pe-3">
+                    <button id="send-button" class="btn px-3 py-2 rounded-button">
+                        <span class="d-flex align-items-center">
+                            Send
+                            <i class="ri-send-plane-fill ms-1"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="small text-muted mt-2 ps-2 text-center">
+                Open Source By &nbsp;<a href="https://apdoolhamza.github.io" style="color: #6366f1 !important;">Apdoolhamza</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>`
