@@ -1,4 +1,3 @@
-# app.py (Flask Integration)
 from flask import Flask, request, jsonify, render_template
 import joblib
 
@@ -11,7 +10,7 @@ clf_ns = joblib.load('models/clf_ns.joblib')
 clf_tf = joblib.load('models/clf_tf.joblib')
 clf_jp = joblib.load('models/clf_jp.joblib')
 
-# Dictionary of personality details (fill all 16 types)
+# Dictionary of personality details
 PERSONALITY_DATA = {
 "INTJ": {
 "name": "The Architect",
