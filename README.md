@@ -2,10 +2,8 @@
 
 A simple yet powerful smart **AI Personality Predictor** that guesses your MBTI type just by analyzing your writing.
 
-![Demo Screenshot](screenshot.png)
-
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-blue?logo=google-chrome&logoColor=white)](https://personality-predictor-gfjj.onrender.com/)
-
+[![Watch the video](https://img.youtube.com/vi/cDToQKIc67M/maxresdefault.jpg)](https://youtu.be/cDToQKIc67M)
+[![Watch on YouTube](https://img.shields.io/badge/Watch%20on-YouTube-red?logo=youtube&logoColor=white)](https://youtu.be/cDToQKIc67M)
 
 ## What does it do?
 
