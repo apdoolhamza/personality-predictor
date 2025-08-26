@@ -4,8 +4,8 @@ A simple yet powerful smart **AI Personality Predictor** that guesses your MBTI 
 
 ![Demo Screenshot](screenshot.png)
 
-## Live Demo
-👉 [Visit the App!](https://personality-predictor-gfjj.onrender.com/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-blue?logo=google-chrome&logoColor=white)](https://personality-predictor-gfjj.onrender.com/)
+
 
 ## What does it do?
 
@@ -15,34 +15,45 @@ It also shows an easy-to-understand explanation of:
 - What it means
 - A famous quote ...
 
+## Technologies Used
+- **Python**: Core language for data processing and machine learning.
+- **Scikit-learn**: For building and evaluating machine learning models.
+- **NLTK**: For NLP tasks like sentiment analysis and text preprocessing.
+- **Pandas & NumPy**: For data manipulation and analysis.
+- **Flask, HTML5, & Bootstrap 5**: For deploying the model as a web application.
+- **Jupyter Notebook**: For exploratory data analysis and model development.
+
+## How to Run Locally
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/apdoolhamza/customer-feedback-sentiment-checker.git
+```
+### 2. Create a virtual environment
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+### 3. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+### 4. Run the project
+```bash
+python app.py
+```
+
+## Usage
+1. Launch the application using the instructions above.
+2. Input data (e.g., text responses or survey data) into the interface.
+3. Receive a personality prediction (e.g., “Extroverted” or “INTP”).
+
 ## Dataset
 This AI was trained on a public dataset made from over 8,000+ people’s writings, where each person’s MBTI type is known.
 The writings were collected from [Kaggle](https://www.kaggle.com/datasets/datasnaek/mbti-type) a popular dataset repository, so the model learned how people with different personality types express themselves through text.
 
-## 🛠 Technologies Used
-* Python
-* Scikit-learn
-* Flask
-* Bootstrap 5
-* HTML5
-* CSS
-
-## ⚙️ How to Run Locally
-
-```bash
-git clone https://github.com/apdoolhamza/personality-predictor.git
-cd personality-predictor
-```
-### Install dependencies
-```bash
-pip install -r requirements.txt
-```
-### Run it
-```bash
-python app.py
-```
-## Author
-Built with ❤️ by [@apdoolhamza](https://github.com/apdoolhamza/)
+## Contact
+Apdoolmajeed Hamza - [LinkedIn Profile](https://www.linkedin.com/in/apdoolhamza/) | [GitHub Profile](https://github.com/apdoolhamza/)
 
 ##  License
-This project is open source under the [MIT License](https://github.com/apdoolhamza/customer-feedback-sentiment-checker/blob/main/LICENSE)
+This project is licensed under the [MIT License](https://github.com/apdoolhamza/personality-predictor/blob/main/LICENSE)
